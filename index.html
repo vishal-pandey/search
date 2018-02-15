@@ -76,7 +76,9 @@
 </style>
 <script type="text/javascript">
 	$(document).ready(function(){
-		$(".code pre").load("http://search.vishalpandey.xyz/search.py");
-		$(".output pre").load("http://search.vishalpandey.xyz/output.html");
+		$.get("https://search.vishalpandey.xyz/search.py", function(data, status){
+        $(".code pre").text(data);
+    });
+		$(".output pre").load("https://search.vishalpandey.xyz/output.html");
 	})
 </script>
