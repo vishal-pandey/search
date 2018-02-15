@@ -24,15 +24,9 @@ def search(theLink):
 				if slink not in links:
 					links.append(slink)
 					fo = open("output.html", "a")
-					fo.write(slink+'<br>')
+					fo.write('<a href="'+slink+'">'+slink+'</a><br>')
 					fo.close()
 
-	# del links[0]
-	# if len(links)>0:
-	# 	if links[0] not in vlinks:
-	# 		search(links[0])
-	# else :
-	# 	return
 
 
 for link in links:
