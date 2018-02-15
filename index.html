@@ -6,6 +6,9 @@
 	</script>
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 	<script src="https://use.fontawesome.com/2c153c4a21.js"></script>
+	<link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 </head>
 <body>
 	<section class="container">
@@ -17,7 +20,7 @@
 		<br>
 		<div class="code">
 			<h2>Code</h2>
-			<pre></pre>
+			<pre><code class="python"></code></pre>
 		</div>
 		<div class="output">
 			<h2>output.html</h2>
@@ -62,7 +65,8 @@
 		justify-content: center;
 		align-items: center;
 		font-family: 'Roboto Slab', serif;
-		color: white;
+		/*color: white;*/
+		color: #E3F2FD
 	}
 	.tbar a{
 		color: white;
@@ -120,8 +124,10 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 		$.get("https://search.vishalpandey.xyz/search.py", function(data, status){
-        $(".code pre").text(data);
+        $(".code pre code").text(data);
+        hljs.initHighlightingOnLoad();
     });
 		$(".output pre").load("https://search.vishalpandey.xyz/output.html");
 	})
 </script>
+<!-- <script>hljs.initHighlightingOnLoad();</script> -->
