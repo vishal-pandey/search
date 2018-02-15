@@ -5,11 +5,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 	</script>
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+	<script src="https://use.fontawesome.com/2c153c4a21.js"></script>
 </head>
 <body>
 	<section class="container">
 		<div class="tbar">
 			<h1>Searching All Links on internet using webscrapping</h1>
+			<h5>Aliases : <a href="https://search.vishalpandey.xyz/">https://search.vishalpandey.xyz/</a> , <a href="https://vishal-pandey.github.io/search/">https://vishal-pandey.github.io/search/</a></h5>
+			<h2><a href="https://github.com/vishal-pandey"><i class="fa fa-github" aria-hidden="true"></i>&nbsp;GitHub</a></h2>
 		</div>
 		<br>
 		<div class="code">
@@ -20,8 +23,18 @@
 			<h2>output.html</h2>
 			<pre></pre>
 		</div>
-		<div class="credit">
-			For More Awesome things visit : <a href="https://www.vishalpandey.xyz">https://www.vishalpandey.xyz/</a>
+		<div class="footer">
+			<a href="https://www.facebook.com/the.vishal.pandey"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+			<a href="https://www.instagram.com/vishalpandeyxyz/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			<a href="https://github.com/vishal-pandey"><i class="fa fa-github" aria-hidden="true"></i></a>
+			<a href="https://twitter.com/vishalpandeyxyz"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			<a href="https://www.linkedin.com/in/thevishalpandey/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+			<a href="https://vishalpandey.quora.com/"><i class="fa fa-quora" aria-hidden="true"></i></a>
+			<a href="https://stackoverflow.com/users/7626313/vishal-pandey"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+			<a href="https://plus.google.com/u/0/109712308677416674874"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+		</div>
+		<div class="footer" style="font-size: 18px;">
+			<a href="https://www.vishalpandey.xyz/">https://www.vishalpandey.xyz/</a>
 		</div>
 	</section>
 </body>
@@ -41,15 +54,35 @@
 	}
 	.tbar{
 		width: 100%;
-		height: 50px;
+		height: 100px;
 		background-color: rgba(111,111,111,1);
+		background-color: #1565C0;
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		font-family: 'Roboto Slab', serif;
 		color: white;
 	}
-	.tbar h1, h2{
+	.tbar a{
+		color: white;
+	}
+	.tbar h2 a{
+		text-decoration: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.tbar h2 a i{
+		font-size: 30px;
+	}
+	.tbar h2{
+		font-size: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	h1, h2, h5{
 		margin: 0;
 	}
 	.code, .output{
@@ -63,15 +96,25 @@
 		height: 500px;
 		overflow-y: auto;
 	}
-	.credit{
+	.footer{
 		width: 100%;
 		height: 50px;
-		background-color: rgba(111,111,111,1);
+		/*background-color: rgba(111,111,111,1);*/
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		font-family: 'Roboto Slab', serif;
 		color: white;
+		text-align: center;
+		font-size: 28px;
+		border-top: 1px solid lightgrey;
+		margin-top: 10px;
+	}
+	
+	.footer a{
+		text-decoration: none;
+		color: blue;
+		margin: 0 10px;
 	}
 </style>
 <script type="text/javascript">
